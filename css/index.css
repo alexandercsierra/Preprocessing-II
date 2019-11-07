@@ -177,8 +177,26 @@ img {
   padding: 1% 0 1.5% 0;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 970px) {
+  .navDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .navDiv {
+    width: 100%;
+  }
+}
 .navDiv h1 {
   margin-left: 10%;
+}
+@media (max-width: 970px) {
+  .navDiv h1 {
+    margin: 0;
+  }
 }
 .navDiv nav {
   width: 30%;
@@ -186,6 +204,17 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1300px) {
+  .navDiv nav {
+    width: 45%;
+  }
+}
+@media (max-width: 970px) {
+  .navDiv nav {
+    margin: 0;
+    width: 100%;
+  }
 }
 .navDiv nav a {
   text-decoration: none;
@@ -203,6 +232,9 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+* {
+  border: 1px solid red !important;
+}
 .home header {
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -215,13 +247,31 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -230,13 +280,32 @@ img {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+  }
 }
 .home .content-destination {
   width: 75%;
