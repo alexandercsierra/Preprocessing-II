@@ -1,6 +1,6 @@
 var button = document.querySelectorAll(".btn");
 var submitBtn = document.querySelector(".submit");
-var form = document.querySelector("form");
+var form = document.querySelector(".form");
 var img = document.querySelector(".tripImage");
 var destination = document.querySelector("select");
 

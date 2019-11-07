@@ -384,9 +384,6 @@ img {
     width: 100%;
   }
 }
-.home .hide {
-  display: none;
-}
 .home .form {
   display: flex;
   justify-content: space-between;
@@ -452,4 +449,7 @@ img {
   .home .form .tripImage {
     margin-bottom: 7%;
   }
+}
+.home .hide {
+  display: none;
 }
