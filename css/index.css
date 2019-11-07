@@ -388,6 +388,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 4%;
 }
 @media (max-width: 850px) {
   .home .form {
@@ -428,6 +429,9 @@ img {
   .home .form div form select {
     width: 40rem;
   }
+}
+.home .form div form button {
+  margin-top: 10%;
 }
 @media (max-width: 850px) {
   .home .form div form button {
