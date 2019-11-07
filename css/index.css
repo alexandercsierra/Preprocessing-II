@@ -377,9 +377,13 @@ img {
   padding: 5% 1%;
   border-radius: 15px;
   color: #FFFFFF;
+  border: none;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
   }
+}
+.home .hide {
+  display: none;
 }
