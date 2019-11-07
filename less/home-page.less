@@ -1,5 +1,5 @@
 *{
-  border: 1px solid red !important;
+  // border: 1px solid red !important;
 }
 
 
@@ -8,6 +8,11 @@
     .border();
     div{
       padding-top: 3%;
+
+      @media @mobile {
+        padding: 4%;
+      }
+
     }//end div
   }//end header
 
@@ -19,7 +24,8 @@
 
     @media @mobile {
       .flexV(center, center);
-    }
+      padding: 0 4% 4% 4%;
+    }//end media
 
     
     .text-content {
@@ -28,10 +34,11 @@
 
       @media @mobile {
         width: 100%;
-      }
+        margin-bottom: 3%;
+      }//end media
   
 
-    }
+    }//end text-content
 
     .img-content {
       width: 48%;
@@ -39,13 +46,19 @@
 
       @media @mobile {
         width: 100%;
-      }
+        padding: 0;
+      }//end media
 
       img {
         border-radius: 10px;
-      }
-    }
-  }
+
+        @media @mobile {
+          width: 100%;
+        }
+
+      }//end img
+    }//end img-content
+  }//end content-section
 
   .inverse-content {
     padding-bottom: 30px;
@@ -79,6 +92,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -90,12 +107,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      .flexV(center, center);
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 90%;
+        padding: 0 7%;
+        .flexV();
+      }
+
       .btn {
         .button();
+        @media @mobile {
+          width: 100%;
+        }
+  
       }
     }
   }
