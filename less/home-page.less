@@ -1,4 +1,29 @@
+* {
+  // border: 1px solid red !important;
+}
+
 .home {
+  header {
+    .border();
+
+    .imageDiv {
+      img {
+        @media @mobile {
+          display: block;
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    } //end imagDiv
+
+    .titleDiv {
+      padding-top: 3%;
+
+      @media @mobile {
+        padding: 4%;
+      }
+    } //end div
+  } //end header
 
   .content-section {
     margin: 30px 0;
@@ -6,41 +31,75 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      .flexV(center, center);
+      padding: 0 4% 4% 4%;
+    } //end media
+
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+
+      @media @mobile {
+        width: 100%;
+        margin-bottom: 3%;
+      } //end media
+    } //end text-content
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      } //end media
+
       img {
         border-radius: 10px;
-      }
-    }
-  }
+
+        @media @mobile {
+          width: 100%;
+        }
+      } //end img
+    } //end img-content
+  } //end content-section
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      .flexV(center, center);
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +112,95 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      .flexV(center, center);
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 90%;
+        padding: 0 7%;
+        .flexV(center, center);
+      }
+
+      .btn {
+        .button();
+        border: none;
+        @media @mobile {
+          width: 100%;
+        }
+      }
     }
   }
-}// home
+  
+
+  .form {
+    .flexH(space-between, center);
+    margin-bottom: 4%;
+
+    @media (max-width: 850px) {
+      .flexV(center, center);
+    }
+
+    div {
+      form {
+        .flexV(center, flex-start);
+        
+
+        @media (max-width: 850px) {
+          margin-bottom: 8%;
+        }
+        label {
+          margin-top: 4%;
+          margin-bottom: 0.8%;
+          font-size: 2rem;
+          font-family: "Indie Flower", cursive;
+        } //end label
+        input {
+          @media (max-width: 850px) {
+            width: 40rem;
+          } //end media
+        } //end input
+        textarea {
+          @media (max-width: 850px) {
+            width: 40rem;
+          }
+        } //end textarea
+        select {
+          @media (max-width: 850px) {
+            width: 40rem;
+          }
+        } //end select
+        button {
+          margin-top: 10%;
+          @media (max-width: 850px){
+            margin-top: 4%;
+          }
+        }
+      } //end form
+    } //end div
+
+    .tripImage {
+      width: 400px;
+      height: 400px;
+      // position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../img/desert.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (max-width: 850px){
+        margin-bottom: 7%;
+      }
+    } //end .tripImage
+  } //end .form
+  .hide {
+    display: none;
+  }
+} // home

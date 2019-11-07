@@ -1,1 +1,28 @@
 // Mixins in here
+
+.flexH (@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flexV (@justify, @align){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.border () {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.button (){
+    background: @button-bg;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 84%;
+    padding: 5% 1%;
+    border-radius: 15px;
+    color: @white;
+}

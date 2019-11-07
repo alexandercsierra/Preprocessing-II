@@ -17,9 +17,25 @@
 <body>
 
   
-     
+    <div class="navDiv">
+        <h1>Fun Bus</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>    
   <div class="container home">
-   
+    <header>
+      <div class="imageDiv">
+        <img src="img/fun-bus.jpg" alt="photo of a bus in a desert">
+      </div>
+      <div class="titleDiv">
+        <h2>Welcome To Fun Bus!</h2>
+        <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travlblogger. Adventure fun traveler pretty design website expedition.</p>
+      </div>
+    </header>
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -51,24 +67,47 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn sun">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn mount">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn island">Sign Me Up!</button>
+      </div>
+    </section>
+    <section class= "form hide">
+      <div>
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          <label for="trips">Choose your trip!</label>
+          <select name="trips" id="trips">
+            <option value="sun">Fun in the Sun</option>
+            <option value="mount">Mountain Excursion</option>
+            <option value="island">Island Getaway</option>
+          </select>
+          <label for="phoneNumber">Phone Number</label>
+          
+          <input type="tel" id="phoneNumber" required>
+          <label for="name">Name</label>
+          <textarea name="" id="" cols="30" rows="10" required></textarea>
+          <button type="submit" class="submit">SUBMIT</button>
+        </form>
+      </div>
+      <div class="tripImage">
       </div>
     </section>
   </div><!-- container -->
-
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
-
+  <script src="index.js"></script>
 </body>
 </html>
