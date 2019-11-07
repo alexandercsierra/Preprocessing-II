@@ -80,10 +80,29 @@
         <button class="btn">Sign Me Up!</button>
       </div>
     </section>
-    <section>
-      <form action="" class="hide">
-        <input type="text">
-      </form>
+    <section class= "form">
+      <div>
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          <label for="trips">Choose your trip!</label>
+          <select name="trips" id="trips">
+            <option value="sun">Fun in the Sun</option>
+            <option value="mount">Mountain Excursion</option>
+            <option value="island">Island Getaway</option>
+          </select>
+          <label for="phoneNumber">Phone Number</label>
+          
+          <input type="tel" id="phoneNumber" required>
+          <label for="name">Name</label>
+          <textarea name="" id="" cols="30" rows="10" required></textarea>
+          <button type="submit" class="submit">SUBMIT</button>
+        </form>
+      </div>
+      <div class="tripImage">
+      </div>
     </section>
   </div><!-- container -->
   <footer class="footer">

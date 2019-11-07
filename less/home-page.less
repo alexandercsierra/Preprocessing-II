@@ -5,25 +5,23 @@
 .home {
   header {
     .border();
-    
+
     .imageDiv {
-      img{
-      @media @mobile {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
+      img {
+        @media @mobile {
+          display: block;
+          width: 90%;
+          margin: 0 auto;
+        }
       }
-    }
-    }//end imagDiv
-    
+    } //end imagDiv
+
     .titleDiv {
       padding-top: 3%;
 
       @media @mobile {
         padding: 4%;
       }
-
-      
     } //end div
   } //end header
 
@@ -138,6 +136,67 @@
     }
   }
   .hide {
-    display:none;
+    display: none;
   }
+
+  .form {
+    .flexH(space-between, center);
+
+    @media (max-width: 850px) {
+      .flexV(center, center);
+    }
+
+    div {
+      form {
+        .flexV(center, flex-start);
+
+        @media (max-width: 850px) {
+          margin-bottom: 8%;
+        }
+        label {
+          margin-top: 4%;
+          margin-bottom: 0.8%;
+          font-size: 2rem;
+          font-family: "Indie Flower", cursive;
+        } //end label
+        input {
+          @media (max-width: 850px) {
+            width: 40rem;
+          } //end media
+        } //end input
+        textarea {
+          @media (max-width: 850px) {
+            width: 40rem;
+          }
+        } //end textarea
+        select {
+          @media (max-width: 850px) {
+            width: 40rem;
+          }
+        } //end select
+        button {
+          @media (max-width: 850px){
+            margin-top: 4%;
+          }
+        }
+      } //end form
+    } //end div
+
+    .tripImage {
+      width: 400px;
+      height: 400px;
+      // position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../img/desert.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (max-width: 850px){
+        margin-bottom: 7%;
+      }
+    } //end .tripImage
+  } //end .form
 } // home

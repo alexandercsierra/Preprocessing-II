@@ -387,3 +387,69 @@ img {
 .home .hide {
   display: none;
 }
+.home .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 850px) {
+  .home .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.home .form div form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 850px) {
+  .home .form div form {
+    margin-bottom: 8%;
+  }
+}
+.home .form div form label {
+  margin-top: 4%;
+  margin-bottom: 0.8%;
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+}
+@media (max-width: 850px) {
+  .home .form div form input {
+    width: 40rem;
+  }
+}
+@media (max-width: 850px) {
+  .home .form div form textarea {
+    width: 40rem;
+  }
+}
+@media (max-width: 850px) {
+  .home .form div form select {
+    width: 40rem;
+  }
+}
+@media (max-width: 850px) {
+  .home .form div form button {
+    margin-top: 4%;
+  }
+}
+.home .form .tripImage {
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/desert.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 850px) {
+  .home .form .tripImage {
+    margin-bottom: 7%;
+  }
+}
